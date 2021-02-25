@@ -1,0 +1,18 @@
+spring:
+    application:
+        name: Multi-Factor-Authentication  
+    datasource: 
+        driverClassName: com.mysql.jdbc.Driver
+        url: "jdbc:mysql://localhost:3306/userservice2fa?autoreconnect=true"
+        password: "abc1234"
+        username: "root"
+        testOnBorrow: true
+        testWhileIdle: true
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 30000
+        validationQuery: SELECT 1
+        max-active: 15
+        max-idle: 10
+        max-wait: 8000
+server:
+  port: 8098
