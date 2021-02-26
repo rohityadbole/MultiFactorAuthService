@@ -10,16 +10,18 @@ import com.twilio.type.PhoneNumber;
 @Service
 public class SMSService {
 
-	private final static String ACCOUNT_SID = "AC7e12b10f82fbff34f1806e608085ba78";
+	/*private final static String ACCOUNT_SID = "AC7e12b10f82fbff34f1806e608085ba78";
 	private final static String AUTH_ID = "3067ccb660f436417cec9135c0392f46";
-	
+	*/
+	private final static String ACCOUNT_SID = "ACd5154d27c8ed99b5fb85ce0e88983df3";
+	private final static String AUTH_ID = "80091248863a88ea7c82f936821c552a";
 	static {
 		Twilio.init(ACCOUNT_SID, AUTH_ID);
 	}
 	
 	public boolean send2FaCode(String mobilenumber, String twoFaCode) {
 		
-		Message.creator(new PhoneNumber(mobilenumber), new PhoneNumber("+15005550006"),
+		Message.creator(new PhoneNumber(mobilenumber), new PhoneNumber("+14159655579"),
 				"Your Two Factor Authentication code is: "+ twoFaCode).create();
 		
 		return true;
