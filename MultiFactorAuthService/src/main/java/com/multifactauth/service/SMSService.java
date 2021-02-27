@@ -14,7 +14,7 @@ public class SMSService {
 	private final static String AUTH_ID = "3067ccb660f436417cec9135c0392f46";
 	*/
 	private final static String ACCOUNT_SID = "ACd5154d27c8ed99b5fb85ce0e88983df3";
-	private final static String AUTH_ID = "80091248863a88ea7c82f936821c552a";
+	private final static String AUTH_ID = "7cbd6d06b13326c37f055323a8939041";
 	static {
 		Twilio.init(ACCOUNT_SID, AUTH_ID);
 	}
